@@ -1,11 +1,25 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:get/get.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
+import 'package:macos_ui/macos_ui.dart';
 import 'config_model.dart';
 import 'routes_config.dart';
-void main() {
+
+Future<void> _configureMacosWindowUtils() async {
+  const config = MacosWindowUtilsConfig();
+  await config.apply();
+}
+void main() async{
+  if (!kIsWeb) {
+    if (Platform.isMacOS) {
+      await _configureMacosWindowUtils();
+    }
+  }
   runApp(const MyApp());
 }
 
@@ -37,7 +51,7 @@ class _MyApp extends State<MyApp> {
                           debugShowCheckedModeBanner: false,
                           navigatorObservers: [FlutterSmartDialog.observer],
                           getPages: RouteConfig.routes(),
-                          initialRoute: RouteConstants.home,
+                          initialRoute: RouteConstants.main,
                           defaultTransition: Transition.cupertino,
                           theme: ThemeData.light(),
                           darkTheme: ThemeData.dark(),

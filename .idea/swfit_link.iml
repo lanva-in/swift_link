@@ -6,9 +6,23 @@
       <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/macos/Flutter/ephemeral/.symlinks/plugins/macos_ui/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/macos/Flutter/ephemeral/.symlinks/plugins/macos_ui/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/macos/Flutter/ephemeral/.symlinks/plugins/macos_ui/build" />
+      <excludeFolder url="file://$MODULE_DIR$/plugin/macos_ui-dev/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/plugin/macos_ui-dev/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/plugin/macos_ui-dev/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/macos/Flutter/ephemeral/.symlinks/plugins/macos_ui/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/macos/Flutter/ephemeral/.symlinks/plugins/macos_ui/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/macos/Flutter/ephemeral/.symlinks/plugins/macos_ui/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/plugin/macos_ui-dev/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/plugin/macos_ui-dev/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/plugin/macos_ui-dev/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
+    <orderEntry type="library" name="Dart Packages" level="project" />
+    <orderEntry type="library" name="Flutter Plugins" level="project" />
   </component>
 </module>
