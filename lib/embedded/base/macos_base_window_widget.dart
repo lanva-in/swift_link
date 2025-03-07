@@ -32,15 +32,19 @@ abstract class MacosBaseWindowWidget<T extends BaseController> extends StatefulW
     return buildWindow(context);
   }
 
-  MacosTheme buildWindow(BuildContext context) {
-    return MacosTheme(
-        data:  MacosThemeData.dark(),
-        child: MacosWindow(
-          sidebar: buildSidebar(context),
-          endSidebar: buildEndSidebar(context),
-          child: buildContent(context),
-        )
+  Widget buildWindow(BuildContext context) {
+   return MacosApp(
+      theme: MacosThemeData.light(),
+      darkTheme: MacosThemeData.dark(),
+      themeMode: ThemeMode.system,
+      debugShowCheckedModeBanner: false,
+      home: MacosWindow(
+        sidebar: buildSidebar(context),
+        endSidebar: buildEndSidebar(context),
+        child: buildContent(context),
+      )
     );
+
   }
 }
 

@@ -69,8 +69,6 @@ class MainPage extends MacosBaseWindowWidget<MainController> {
           // setState(() => showDevice = true);
         },
         child: Container(
-          height: 200,
-          color: Colors.red,
         ),
       ),
       minWidth: 220,
@@ -84,6 +82,7 @@ class MainPage extends MacosBaseWindowWidget<MainController> {
               },
               scrollController: scrollController,
               itemSize: SidebarItemSize.large,
+              unselectedColor: Colors.transparent,
               items: const [
                 SidebarItem(
                   leading: MacosIcon(Icons.lock),
