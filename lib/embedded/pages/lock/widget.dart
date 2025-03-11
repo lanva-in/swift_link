@@ -22,10 +22,11 @@ class LockPage extends MacosBaseWidget<LockController> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
                SizedBox(
-                 height: 100.h,
+                 height: 120.h,
                  child: topWidget(context),
                ),
-              bottomWidget(maxWidth,maxHeight - 100.h)
+              const SizedBox(height: 10),
+              bottomWidget(maxWidth,maxHeight - 120.h - 10)
             ],
           );
         });
@@ -36,9 +37,9 @@ class LockPage extends MacosBaseWidget<LockController> {
        mainAxisAlignment: MainAxisAlignment.center,
        crossAxisAlignment: CrossAxisAlignment.center,
        children: [
-         Icon(Icons.computer,size: 120,color: Theme.of(context).textTheme.bodyLarge?.color),
-         SizedBox(height: 120,child: Center(child: Lottie.asset('assets/jsons/Animation1.json'))),
-         Icon(Icons.phone_iphone,size: 120,color: Theme.of(context).textTheme.bodyLarge?.color)
+         Icon(Icons.computer,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color),
+         SizedBox(width: 120,child: Center(child: Lottie.asset('assets/jsons/Animation1.json'))),
+         Icon(Icons.phone_iphone,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color)
        ],
      );
   }
