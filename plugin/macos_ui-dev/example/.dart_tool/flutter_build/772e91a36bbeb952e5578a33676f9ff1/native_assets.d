@@ -1,0 +1,1 @@
+ /Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/.dart_tool/flutter_build/772e91a36bbeb952e5578a33676f9ff1/native_assets.yaml: 

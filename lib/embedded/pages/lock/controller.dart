@@ -1,8 +1,7 @@
 import 'dart:async';
 
 import 'package:swift_link/embedded/base/base_controller.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:bluetooth/bluetooth.dart';
 
 
 class LockController extends BaseController {
@@ -15,6 +14,11 @@ class LockController extends BaseController {
   @override
   void onInit() {
     super.onInit();
+    ble.scanResult().listen((event) {
+       event.forEach((element) {
+         print(element.name);
+       });
+    });
   }
 
   @override
@@ -25,6 +29,10 @@ class LockController extends BaseController {
   @override
   void onClose() {
     super.onClose();
+  }
+
+  void changeValue(int index) {
+    ble.startBleScan();
   }
 
 }

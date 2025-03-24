@@ -1,0 +1,28 @@
+{
+  "" : {
+    "diagnostics" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/macos_ui-master.dia",
+    "emit-module-dependencies" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/macos_ui-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/macos_ui-master-emit-module.dia",
+    "swift-dependencies" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/macos_ui-master.swiftdeps"
+  },
+  "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/macos/Classes/ColorPanelProvider.swift" : {
+    "const-values" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/ColorPanelProvider.swiftconstvalues",
+    "dependencies" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/ColorPanelProvider.d",
+    "diagnostics" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/ColorPanelProvider.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/ColorPanelProvider.o",
+    "llvm-bc" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/ColorPanelProvider.bc",
+    "object" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/ColorPanelProvider.o",
+    "swift-dependencies" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/ColorPanelProvider.swiftdeps",
+    "swiftmodule" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/ColorPanelProvider~partial.swiftmodule"
+  },
+  "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/macos/Classes/MacosUiPlugin.swift" : {
+    "const-values" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/MacosUiPlugin.swiftconstvalues",
+    "dependencies" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/MacosUiPlugin.d",
+    "diagnostics" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/MacosUiPlugin.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/MacosUiPlugin.o",
+    "llvm-bc" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/MacosUiPlugin.bc",
+    "object" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/MacosUiPlugin.o",
+    "swift-dependencies" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/MacosUiPlugin.swiftdeps",
+    "swiftmodule" : "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/Objects-normal/x86_64/MacosUiPlugin~partial.swiftmodule"
+  }
+}

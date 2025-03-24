@@ -1,0 +1,23 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Products/Debug/macos_ui/macos_ui.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/unextended-module.modulemap",
+    }]
+    },
+    {
+    'type': 'directory',
+    'name': "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Products/Debug/macos_ui/macos_ui.framework/Headers"
+    'contents': [{
+      'type': 'file',
+      'name': "macos_ui-Swift.h",
+      'external-contents': "/Users/ido_ios/Desktop/code/swift_link/plugin/macos_ui-dev/example/build/macos/Build/Intermediates.noindex/Pods.build/Debug/macos_ui.build/unextended-interface-header.h",
+    }]
+    }]
+}

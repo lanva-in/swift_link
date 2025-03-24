@@ -40,9 +40,12 @@ dependencies:
   desktop_window: ^0.4.0
   window_manager: ^0.3.8
   lottie: ^2.3.2
+#  macos_ui: ^2.0.9
 
   macos_ui:
     path: plugin/macos_ui-dev
+  bluetooth:
+    path: plugin/bluetooth
 
 dev_dependencies:
   flutter_test:

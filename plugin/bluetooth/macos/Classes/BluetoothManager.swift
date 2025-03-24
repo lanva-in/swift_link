@@ -23,10 +23,8 @@ class BluetoothManager: NSObject {
     var delegate: ApiBluetoothListener?
     
     let servicesUUID : [CBUUID] = {
-        let uuid1 = CBUUID.init(string: "00001530-1212-EFDE-1523-785FEABCD123")
-        let uuid2 = CBUUID.init(string: "00000af0-0000-1000-8000-00805f9b34fb")
-        let uuid3 = CBUUID.init(string: "FE59")
-        return [uuid1,uuid2,uuid3]
+        let uuid = CBUUID.init(string: "00000af0-0000-1000-8000-00805f9b34fb")
+        return [uuid]
     }()
     
     static let shared = BluetoothManager()
@@ -35,7 +33,7 @@ class BluetoothManager: NSObject {
     lazy var manager: CBCentralManager = {
         let options: [String : Any] = [
             CBCentralManagerOptionShowPowerAlertKey : true,
-            CBCentralManagerOptionRestoreIdentifierKey : "IDOBluetoothStrapRestoreIdentifier"
+            CBCentralManagerOptionRestoreIdentifierKey : "BluetoothStrapRestoreIdentifier"
         ]
         let manager = CBCentralManager.init(delegate: self, queue: DispatchQueue.main, options: options)
         return manager
@@ -146,7 +144,7 @@ extension BluetoothManager: ApiBluetooth {
             manager.stopScan()
         }
         let option = [CBCentralManagerScanOptionAllowDuplicatesKey : NSNumber.init(value: false)]
-        manager.scanForPeripherals(withServices: servicesUUID, options: option)
+        manager.scanForPeripherals(withServices: nil, options: option)
         completion(Result.success(true))
     }
     
