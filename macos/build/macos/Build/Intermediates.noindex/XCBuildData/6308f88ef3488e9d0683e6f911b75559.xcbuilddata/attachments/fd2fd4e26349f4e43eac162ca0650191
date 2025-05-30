@@ -1,0 +1,88 @@
+{
+  "" : {
+    "diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/appkit_ui_element_colors-master.dia",
+    "emit-module-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/appkit_ui_element_colors-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/appkit_ui_element_colors-master-emit-module.dia",
+    "swift-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/appkit_ui_element_colors-master.swiftdeps"
+  },
+  "/Users/hedongyang/.pub-cache/hosted/pub.flutter-io.cn/appkit_ui_element_colors-1.0.0/macos/Classes/AppkitUiElementColorsPlugin.swift" : {
+    "const-values" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/AppkitUiElementColorsPlugin.swiftconstvalues",
+    "dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/AppkitUiElementColorsPlugin.d",
+    "diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/AppkitUiElementColorsPlugin.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/AppkitUiElementColorsPlugin.o",
+    "llvm-bc" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/AppkitUiElementColorsPlugin.bc",
+    "object" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/AppkitUiElementColorsPlugin.o",
+    "swift-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/AppkitUiElementColorsPlugin.swiftdeps",
+    "swiftmodule" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/AppkitUiElementColorsPlugin~partial.swiftmodule"
+  },
+  "/Users/hedongyang/.pub-cache/hosted/pub.flutter-io.cn/appkit_ui_element_colors-1.0.0/macos/Classes/NSAppearanceNameToAppearanceConverter.swift" : {
+    "const-values" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSAppearanceNameToAppearanceConverter.swiftconstvalues",
+    "dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSAppearanceNameToAppearanceConverter.d",
+    "diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSAppearanceNameToAppearanceConverter.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSAppearanceNameToAppearanceConverter.o",
+    "llvm-bc" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSAppearanceNameToAppearanceConverter.bc",
+    "object" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSAppearanceNameToAppearanceConverter.o",
+    "swift-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSAppearanceNameToAppearanceConverter.swiftdeps",
+    "swiftmodule" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSAppearanceNameToAppearanceConverter~partial.swiftmodule"
+  },
+  "/Users/hedongyang/.pub-cache/hosted/pub.flutter-io.cn/appkit_ui_element_colors-1.0.0/macos/Classes/NSColorComponent.swift" : {
+    "const-values" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorComponent.swiftconstvalues",
+    "dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorComponent.d",
+    "diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorComponent.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorComponent.o",
+    "llvm-bc" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorComponent.bc",
+    "object" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorComponent.o",
+    "swift-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorComponent.swiftdeps",
+    "swiftmodule" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorComponent~partial.swiftmodule"
+  },
+  "/Users/hedongyang/.pub-cache/hosted/pub.flutter-io.cn/appkit_ui_element_colors-1.0.0/macos/Classes/NSColorNameToColorConverter.swift" : {
+    "const-values" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorNameToColorConverter.swiftconstvalues",
+    "dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorNameToColorConverter.d",
+    "diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorNameToColorConverter.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorNameToColorConverter.o",
+    "llvm-bc" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorNameToColorConverter.bc",
+    "object" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorNameToColorConverter.o",
+    "swift-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorNameToColorConverter.swiftdeps",
+    "swiftmodule" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorNameToColorConverter~partial.swiftmodule"
+  },
+  "/Users/hedongyang/.pub-cache/hosted/pub.flutter-io.cn/appkit_ui_element_colors-1.0.0/macos/Classes/NSColorSpaceNameToColorSpaceConverter.swift" : {
+    "const-values" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorSpaceNameToColorSpaceConverter.swiftconstvalues",
+    "dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorSpaceNameToColorSpaceConverter.d",
+    "diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorSpaceNameToColorSpaceConverter.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorSpaceNameToColorSpaceConverter.o",
+    "llvm-bc" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorSpaceNameToColorSpaceConverter.bc",
+    "object" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorSpaceNameToColorSpaceConverter.o",
+    "swift-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorSpaceNameToColorSpaceConverter.swiftdeps",
+    "swiftmodule" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorSpaceNameToColorSpaceConverter~partial.swiftmodule"
+  },
+  "/Users/hedongyang/.pub-cache/hosted/pub.flutter-io.cn/appkit_ui_element_colors-1.0.0/macos/Classes/NSColorToDictionaryConverter.swift" : {
+    "const-values" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToDictionaryConverter.swiftconstvalues",
+    "dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToDictionaryConverter.d",
+    "diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToDictionaryConverter.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToDictionaryConverter.o",
+    "llvm-bc" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToDictionaryConverter.bc",
+    "object" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToDictionaryConverter.o",
+    "swift-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToDictionaryConverter.swiftdeps",
+    "swiftmodule" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToDictionaryConverter~partial.swiftmodule"
+  },
+  "/Users/hedongyang/.pub-cache/hosted/pub.flutter-io.cn/appkit_ui_element_colors-1.0.0/macos/Classes/NSColorToHashConverter.swift" : {
+    "const-values" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToHashConverter.swiftconstvalues",
+    "dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToHashConverter.d",
+    "diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToHashConverter.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToHashConverter.o",
+    "llvm-bc" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToHashConverter.bc",
+    "object" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToHashConverter.o",
+    "swift-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToHashConverter.swiftdeps",
+    "swiftmodule" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/NSColorToHashConverter~partial.swiftmodule"
+  },
+  "/Users/hedongyang/.pub-cache/hosted/pub.flutter-io.cn/appkit_ui_element_colors-1.0.0/macos/Classes/SystemColorObserver.swift" : {
+    "const-values" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/SystemColorObserver.swiftconstvalues",
+    "dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/SystemColorObserver.d",
+    "diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/SystemColorObserver.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/SystemColorObserver.o",
+    "llvm-bc" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/SystemColorObserver.bc",
+    "object" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/SystemColorObserver.o",
+    "swift-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/SystemColorObserver.swiftdeps",
+    "swiftmodule" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/appkit_ui_element_colors.build/Objects-normal/x86_64/SystemColorObserver~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "" : {
+    "diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/screen_retriever-master.dia",
+    "emit-module-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/screen_retriever-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/screen_retriever-master-emit-module.dia",
+    "swift-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/screen_retriever-master.swiftdeps"
+  },
+  "/Users/hedongyang/.pub-cache/hosted/pub.flutter-io.cn/screen_retriever-0.1.9/macos/Classes/ScreenRetrieverPlugin.swift" : {
+    "const-values" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/ScreenRetrieverPlugin.swiftconstvalues",
+    "dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/ScreenRetrieverPlugin.d",
+    "diagnostics" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/ScreenRetrieverPlugin.dia",
+    "index-unit-output-path" : "/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/ScreenRetrieverPlugin.o",
+    "llvm-bc" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/ScreenRetrieverPlugin.bc",
+    "object" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/ScreenRetrieverPlugin.o",
+    "swift-dependencies" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/ScreenRetrieverPlugin.swiftdeps",
+    "swiftmodule" : "/Users/hedongyang/Desktop/code/gitHub/swift_link/build/macos/Build/Intermediates.noindex/Pods.build/Debug/screen_retriever.build/Objects-normal/x86_64/ScreenRetrieverPlugin~partial.swiftmodule"
+  }
+}

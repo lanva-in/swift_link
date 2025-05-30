@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/window_manager-0.3.9" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/appkit_ui_element_colors-1.0.0" />
+      <root url="file://$PROJECT_DIR$/../plugin/macos_ui-dev" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/desktop_window-0.4.2" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/macos_window_utils-1.6.1" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.flutter-io.cn/screen_retriever-0.1.9" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
