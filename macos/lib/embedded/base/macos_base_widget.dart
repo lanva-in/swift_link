@@ -44,6 +44,9 @@ abstract class MacosBaseWidget<T extends BaseController> extends StatefulWidget 
             message: '左边栏',
             useMousePosition: false,
             child: MacosIconButton(
+              // backgroundColor: Colors.transparent,
+              // disabledColor: Colors.transparent,
+              hoverColor: Colors.transparent,
               icon: MacosIcon(
                 CupertinoIcons.sidebar_left,
                 color: MacosTheme.brightnessOf(context).resolve(

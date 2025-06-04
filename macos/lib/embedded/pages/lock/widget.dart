@@ -12,6 +12,8 @@ import 'item.dart';
 class LockPage extends MacosBaseWidget<LockController> {
   LockPage({super.key});
 
+
+
   @override
   Widget buildContent(BuildContext context) {
     return LayoutBuilder(
@@ -38,9 +40,22 @@ class LockPage extends MacosBaseWidget<LockController> {
        mainAxisAlignment: MainAxisAlignment.center,
        crossAxisAlignment: CrossAxisAlignment.center,
        children: [
-         Icon(Icons.computer,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color),
-         SizedBox(width: 120,child: Center(child: Lottie.asset('assets/jsons/Animation1.json'))),
-         Icon(Icons.phone_iphone,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color)
+         // Icon(Icons.computer,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color),
+         // SizedBox(width: 120,child: Center(child: Lottie.asset('assets/jsons/Animation1.json'))),
+         // Icon(Icons.phone_iphone,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color)
+         Stack(
+           children: [
+             Center(
+                 child: SizedBox(width: 200,height: 200, child: Image.asset(
+                   'assets/images/devices_macbook_pro.png',
+                   fit: BoxFit.contain,
+                 ))
+             ),
+             Center(
+               child: SizedBox(width: 200,height: 200,child: Center(child: Lottie.asset('assets/jsons/Animation2.json'))),
+             )
+           ],
+         )
        ],
      );
   }
