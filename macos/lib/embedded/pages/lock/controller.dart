@@ -13,20 +13,7 @@ class LockController extends BaseController {
     {'icon':'fingerprint.png','title':'指纹扫脸\n锁定/解锁','value':0},{'icon':'shearPlate.png','title':'剪切板\nCTRL+CMD+V','value':0},
     {'icon':'sleep.png','title':'锁定项\n睡眠','value':0},{'icon':'screenSaver.png','title':'锁定项\n屏保','value':0}];
 
-  RxInt currentIndex = 0.obs;
-
-  // 图片列表
-  final List<String> imageUrls = [
-    'assets/images/devices_imac.png',
-    'assets/images/devices_mac_mini.png',
-    'assets/images/devices_mac_pro.png',
-    'assets/images/devices_macbook_air.png',
-    'assets/images/devices_macbook_pro.png',
-    'assets/images/devices_iphone_6.png',
-    'assets/images/devices_iphone_x.png',
-  ];
-
-
+  RxBool visible = false.obs;
 
   @override
   void onInit() {
@@ -36,11 +23,19 @@ class LockController extends BaseController {
   @override
   void onReady() {
     super.onReady();
+    _startAnimation();
   }
 
   @override
   void onClose() {
     super.onClose();
+  }
+
+  void _startAnimation() {
+    // 使用 Timer.periodic 创建循环
+    Timer.periodic(const Duration(seconds: 2), (timer) {
+       visible.value = !visible.value;
+    });
   }
 
 }

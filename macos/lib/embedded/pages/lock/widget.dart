@@ -8,73 +8,144 @@ import '../../base/macos_base_widget.dart';
 import 'controller.dart';
 import 'item.dart';
 
-
 class LockPage extends MacosBaseWidget<LockController> {
   LockPage({super.key});
 
-
-
   @override
   Widget buildContent(BuildContext context) {
-    return LayoutBuilder(
-        builder: (BuildContext context, BoxConstraints constraints) {
-          double maxWidth = constraints.maxWidth;
-          double maxHeight = constraints.maxHeight;
-          return Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-               SizedBox(
-                 height: 120.h,
-                 child: topWidget(context),
-               ),
-              const SizedBox(height: 10),
-              bottomWidget(maxWidth,maxHeight - 120.h - 10)
-            ],
-          );
-        });
+    return LayoutBuilder(builder: (BuildContext context, BoxConstraints constraints) {
+      double maxWidth = constraints.maxWidth;
+      double maxHeight = constraints.maxHeight;
+      return Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          SizedBox(
+            height: 160.h,
+            child: topWidget(context),
+          ),
+          const SizedBox(height: 10),
+          bottomWidget(maxWidth, maxHeight - 160.h - 10)
+        ],
+      );
+    });
   }
 
+  // Icon(Icons.computer,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color),
+  // SizedBox(width: 120,child: Center(child: Lottie.asset('assets/jsons/Animation1.json'))),
+  // Icon(Icons.phone_iphone,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color)
   Widget topWidget(BuildContext context) {
-     return Row(
-       mainAxisAlignment: MainAxisAlignment.center,
-       crossAxisAlignment: CrossAxisAlignment.center,
-       children: [
-         // Icon(Icons.computer,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color),
-         // SizedBox(width: 120,child: Center(child: Lottie.asset('assets/jsons/Animation1.json'))),
-         // Icon(Icons.phone_iphone,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color)
-         Stack(
-           children: [
-             Center(
-                 child: SizedBox(width: 200,height: 200, child: Image.asset(
-                   'assets/images/devices_macbook_pro.png',
-                   fit: BoxFit.contain,
-                 ))
-             ),
-             Center(
-               child: SizedBox(width: 200,height: 200,child: Center(child: Lottie.asset('assets/jsons/Animation2.json'))),
-             )
-           ],
-         )
-       ],
-     );
+    return _noDeviceConnected(context);
+    // return Column(
+    //   children: [
+    //     Row(
+    //       mainAxisAlignment: MainAxisAlignment.center,
+    //       crossAxisAlignment: CrossAxisAlignment.center,
+    //       children: [
+    //         Stack(
+    //           alignment: Alignment.center,
+    //           children: [
+    //             Center(
+    //                 child: Container(
+    //                     width: 120.h,
+    //                     height: 120.h,
+    //                     child: Image.asset(
+    //                       'assets/images/devices_macbook_pro.png',
+    //                       fit: BoxFit.contain,
+    //                     ))),
+    //             Center(
+    //               child: Container(
+    //                   width: 50.h, height: 50.h, child: Center(child: Lottie.asset('assets/jsons/Animation2.json'))),
+    //             )
+    //           ],
+    //         ),
+    //         Obx(() => AnimatedOpacity(
+    //             opacity: controller.visible.value ? 1.0 : 0.0,
+    //             duration: const Duration(seconds: 1),
+    //             child: Center(
+    //                 child: Container(
+    //                     width: 120.h,
+    //                     height: 120.h,
+    //                     child: Image.asset(
+    //                       'assets/images/devices_iphone_x.png',
+    //                       fit: BoxFit.contain,
+    //                     )))))
+    //       ],
+    //     ),
+    //   ],
+    // );
   }
 
-  Widget bottomWidget(double maxWidth,double height) {
+  Widget _noDeviceConnected(BuildContext context) {
+    return Column(
+      children: [
+        Stack(
+          alignment: Alignment.center,
+          children: [
+            Center(
+                child: Container(
+                    width: 120.h,
+                    height: 120.h,
+                    child: Image.asset(
+                      'assets/images/macbook_pro.png',
+                      fit: BoxFit.contain,
+                    ))),
+            Center(child: Icon(Icons.link_off, size: 30.h, color: Theme.of(context).textTheme.bodyLarge?.color)),
+          ],
+        ),
+        SizedBox(height: 5.h),
+        ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.w),
+              ),
+            ),
+            onPressed: () {
+
+            },
+            child: Container(
+              width: 200.w,
+              padding: EdgeInsets.all(5.h),
+              child: const Center(
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      '绑定设备',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
+              ),
+            )),
+      ],
+    );
+  }
+
+  Widget bottomWidget(double maxWidth, double height) {
     int crossAxisCount = maxWidth ~/ 150;
-   return Container(
-       height: height,
-       child: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-     crossAxisCount: crossAxisCount, // 每行显示的列数
-   ),
-       itemCount: controller.items.length,
-       itemBuilder: (BuildContext context,int index){
-         final item = controller.items[index];
-         final iconName = (item['icon'] ?? '') as String;
-         final title = (item['title'] ?? '') as String;
-         final value = (item['value'] ?? 0) as int;
-         return LockItem(iconName: iconName, title: title, value: value);
-       }));
+    if (crossAxisCount > 5) {
+       crossAxisCount = 5;
+    }
+    return Container(
+        height: height,
+        child: GridView.builder(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: crossAxisCount, // 每行显示的列数
+            ),
+            itemCount: controller.items.length,
+            itemBuilder: (BuildContext context, int index) {
+              final item = controller.items[index];
+              final iconName = (item['icon'] ?? '') as String;
+              final title = (item['title'] ?? '') as String;
+              final value = (item['value'] ?? 0) as int;
+              return LockItem(iconName: iconName, title: title, value: value);
+            }));
   }
 
   @override
