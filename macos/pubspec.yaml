@@ -43,6 +43,8 @@ dependencies:
 
   macos_ui:
     path: ../plugin/macos_ui-dev
+  bluetooth:
+    path: ../plugin/bluetooth
 
 dev_dependencies:
   flutter_test:

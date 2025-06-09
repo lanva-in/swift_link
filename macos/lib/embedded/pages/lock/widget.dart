@@ -31,51 +31,15 @@ class LockPage extends MacosBaseWidget<LockController> {
     });
   }
 
-  // Icon(Icons.computer,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color),
-  // SizedBox(width: 120,child: Center(child: Lottie.asset('assets/jsons/Animation1.json'))),
-  // Icon(Icons.phone_iphone,size: 120.h,color: Theme.of(context).textTheme.bodyLarge?.color)
   Widget topWidget(BuildContext context) {
-    return _noDeviceConnected(context);
-    // return Column(
-    //   children: [
-    //     Row(
-    //       mainAxisAlignment: MainAxisAlignment.center,
-    //       crossAxisAlignment: CrossAxisAlignment.center,
-    //       children: [
-    //         Stack(
-    //           alignment: Alignment.center,
-    //           children: [
-    //             Center(
-    //                 child: Container(
-    //                     width: 120.h,
-    //                     height: 120.h,
-    //                     child: Image.asset(
-    //                       'assets/images/devices_macbook_pro.png',
-    //                       fit: BoxFit.contain,
-    //                     ))),
-    //             Center(
-    //               child: Container(
-    //                   width: 50.h, height: 50.h, child: Center(child: Lottie.asset('assets/jsons/Animation2.json'))),
-    //             )
-    //           ],
-    //         ),
-    //         Obx(() => AnimatedOpacity(
-    //             opacity: controller.visible.value ? 1.0 : 0.0,
-    //             duration: const Duration(seconds: 1),
-    //             child: Center(
-    //                 child: Container(
-    //                     width: 120.h,
-    //                     height: 120.h,
-    //                     child: Image.asset(
-    //                       'assets/images/devices_iphone_x.png',
-    //                       fit: BoxFit.contain,
-    //                     )))))
-    //       ],
-    //     ),
-    //   ],
-    // );
+    if (controller.isShow) {
+      return _searchDeviceIng(context);
+    }else {
+      return _noDeviceConnected(context);
+    }
   }
 
+  /// 没有绑定设备的时候
   Widget _noDeviceConnected(BuildContext context) {
     return Column(
       children: [
@@ -102,12 +66,12 @@ class LockPage extends MacosBaseWidget<LockController> {
               ),
             ),
             onPressed: () {
-
+              controller.startScan();
             },
             child: Container(
               width: 200.w,
               padding: EdgeInsets.all(5.h),
-              child: const Center(
+              child: Center(
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -116,6 +80,140 @@ class LockPage extends MacosBaseWidget<LockController> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
+                          color: Theme.of(context).textTheme.bodyLarge?.color,
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
+              ),
+            )),
+      ],
+    );
+  }
+
+  /// 搜索设备中...
+  Widget _searchDeviceIng(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Stack(
+              alignment: Alignment.center,
+              children: [
+                Center(
+                    child: Container(
+                        width: 120.h,
+                        height: 120.h,
+                        child: Image.asset(
+                          'assets/images/macbook_pro.png',
+                          fit: BoxFit.contain,
+                        ))),
+                Center(
+                  child: SizedBox(
+                      width: 50.h, height: 50.h, child: Center(child: Lottie.asset('assets/jsons/Animation2.json'))),
+                )
+              ],
+            ),
+            SizedBox(width: 40.w),
+            Obx(() => AnimatedOpacity(
+                opacity: controller.visible.value ? 1.0 : 0.0,
+                duration: const Duration(seconds: 1),
+                child: SizedBox(
+                    width: 40.h,
+                    height: 80.h,
+                    child: Image.asset(
+                      'assets/images/iphone_x.png',
+                      fit: BoxFit.fitHeight,
+                    )))),
+          ],
+        ),
+        SizedBox(height: 5.h),
+        ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.w),
+              ),
+            ),
+            onPressed: () {},
+            child: Container(
+              width: 200.w,
+              padding: EdgeInsets.all(5.h),
+              child: Center(
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      '解除绑定',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          color: Theme.of(context).textTheme.bodyLarge?.color,
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
+              ),
+            )),
+      ],
+    );
+  }
+
+  /// 绑定设备已连接
+  Widget _didconnected(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(
+                width: 120.h,
+                height: 120.h,
+                child: Image.asset(
+                  'assets/images/macbook_pro.png',
+                  fit: BoxFit.contain,
+                  color: Theme.of(context).textTheme.bodyLarge?.color,
+                )),
+            SizedBox(width: 5.w),
+            SizedBox(width: 120, child: Center(child: Lottie.asset('assets/jsons/Animation1.json'))),
+            SizedBox(width: 5.w),
+            SizedBox(
+                width: 40.h,
+                height: 80.h,
+                child: Image.asset(
+                  'assets/images/iphone_x.png',
+                  fit: BoxFit.contain,
+                  color: Theme.of(context).textTheme.bodyLarge?.color
+                )),
+          ],
+        ),
+        SizedBox(height: 5.h),
+        ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.w),
+              ),
+            ),
+            onPressed: () {},
+            child: Container(
+              width: 200.w,
+              padding: EdgeInsets.all(5.h),
+              child: Center(
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      '解除绑定',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          color: Theme.of(context).textTheme.bodyLarge?.color,
                           fontSize: 14,
                           fontWeight: FontWeight.bold),
                     )
@@ -130,7 +228,7 @@ class LockPage extends MacosBaseWidget<LockController> {
   Widget bottomWidget(double maxWidth, double height) {
     int crossAxisCount = maxWidth ~/ 150;
     if (crossAxisCount > 5) {
-       crossAxisCount = 5;
+      crossAxisCount = 5;
     }
     return Container(
         height: height,

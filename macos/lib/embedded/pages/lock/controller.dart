@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import '../../base/base_controller.dart';
-import 'package:flutter/material.dart';
+import 'package:bluetooth/bluetooth.dart';
 import 'package:get/get.dart';
 
 
@@ -15,27 +15,50 @@ class LockController extends BaseController {
 
   RxBool visible = false.obs;
 
+  bool isShow = false;
+
+  Timer ? _timer;
+
   @override
   void onInit() {
     super.onInit();
+    _initBluetooth();
   }
 
   @override
   void onReady() {
     super.onReady();
-    _startAnimation();
   }
 
   @override
   void onClose() {
     super.onClose();
+    _timer?.cancel();
+    _timer = null;
   }
 
   void _startAnimation() {
     // 使用 Timer.periodic 创建循环
-    Timer.periodic(const Duration(seconds: 2), (timer) {
+    _timer = Timer.periodic(const Duration(seconds: 1),
+            (timer) {
        visible.value = !visible.value;
     });
+  }
+
+  void _initBluetooth() {
+     ble.bleLog().listen((event) {
+
+     });
+     ble.scanResult().listen((event) {
+        print("scanResult == ${event.map((e) => e.toJson()).toList()}");
+     });
+  }
+
+  /// 启动扫描设备
+  void startScan() {
+    ble.startBleScan();
+    isShow = true;
+    update();
   }
 
 }
