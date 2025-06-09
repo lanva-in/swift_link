@@ -15,7 +15,7 @@ class LockController extends BaseController {
 
   RxBool visible = false.obs;
 
-  bool isShow = false;
+  RxBool isShow = false.obs;
 
   Timer ? _timer;
 
@@ -57,8 +57,8 @@ class LockController extends BaseController {
   /// 启动扫描设备
   void startScan() {
     ble.startBleScan();
-    isShow = true;
-    update();
+    _startAnimation();
+    isShow.value = true;
   }
 
 }

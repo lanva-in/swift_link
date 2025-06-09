@@ -22,7 +22,7 @@ class LockPage extends MacosBaseWidget<LockController> {
         children: [
           SizedBox(
             height: 160.h,
-            child: topWidget(context),
+            child: Obx(() => topWidget(context)),
           ),
           const SizedBox(height: 10),
           bottomWidget(maxWidth, maxHeight - 160.h - 10)
@@ -32,7 +32,7 @@ class LockPage extends MacosBaseWidget<LockController> {
   }
 
   Widget topWidget(BuildContext context) {
-    if (controller.isShow) {
+    if (controller.isShow.value) {
       return _searchDeviceIng(context);
     }else {
       return _noDeviceConnected(context);
@@ -53,6 +53,7 @@ class LockPage extends MacosBaseWidget<LockController> {
                     child: Image.asset(
                       'assets/images/macbook_pro.png',
                       fit: BoxFit.contain,
+                        color: Theme.of(context).textTheme.bodyLarge?.color
                     ))),
             Center(child: Icon(Icons.link_off, size: 30.h, color: Theme.of(context).textTheme.bodyLarge?.color)),
           ],
@@ -110,6 +111,7 @@ class LockPage extends MacosBaseWidget<LockController> {
                         child: Image.asset(
                           'assets/images/macbook_pro.png',
                           fit: BoxFit.contain,
+                          color: Theme.of(context).textTheme.bodyLarge?.color
                         ))),
                 Center(
                   child: SizedBox(
@@ -126,7 +128,8 @@ class LockPage extends MacosBaseWidget<LockController> {
                     height: 80.h,
                     child: Image.asset(
                       'assets/images/iphone_x.png',
-                      fit: BoxFit.fitHeight,
+                      fit: BoxFit.contain,
+                      color: Theme.of(context).textTheme.bodyLarge?.color
                     )))),
           ],
         ),
